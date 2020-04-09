@@ -1,0 +1,363 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<h1><marquee>Student Registration Form</marquee></h1>
+</head>
+
+<body>
+		
+<form name=stud method="get" align="center" action="" onSubmit="return (validate());">
+<table cellpadding="4"  cellspacing="3" width="40%" align="center">
+
+<tr>
+<td><b>FIRST NAME</b></td>
+<td><input type="text" name="firstname" id="firstname"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+
+<tr>
+<td><b>FATHER'S NAME</b></td>
+<td><input type="text" name="fathername" id="fathername"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+
+<tr>
+<td><b>LAST NAME</b></td>
+<td><input type="text" name="lastname" id="lastname"/>
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+
+<tr>
+<td><b>DATE OF BIRTH</b></td>
+<td><select name="date" id="BDate">
+<option value="-1">Date:</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+ 
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+ 
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+ 
+
+<select name="month" id="Month">
+<option value="-1">Month:</option>
+<option value="January">Jan</option>
+<option value="February">Feb</option>
+<option value="March">Mar</option>
+<option value="April">Apr</option>
+<option value="May">May</option>
+<option value="June">Jun</option>
+<option value="July">Jul</option>
+<option value="August">Aug</option>
+<option value="September">Sep</option>
+<option value="October">Oct</option>
+<option value="November">Nov</option>
+<option value="December">Dec</option>
+</select>
+ 
+<select name="year" id="BYear">
+<option value="-1">Year:</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>
+<option value="2008">2008</option>
+<option value="2007">2007</option>
+<option value="2006">2006</option>
+<option value="2005">2005</option>
+<option value="2004">2004</option>
+<option value="2003">2003</option>
+<option value="2002">2002</option>
+<option value="2001">2001</option>
+<option value="2000">2000</option>
+</select>
+</td>
+</tr>
+ 
+
+<tr>
+<td><b>EMAIL ID</b></td>
+<td><input type="text" name="ei" maxlength="100" /></td>
+</tr>
+
+<tr>
+<td><b>MOBILE NUMBER</b></td>
+<td>
+<input type="text" name="mobn" maxlength="10" />
+(10 digit number)
+</td>
+</tr>
+
+<tr>
+<td><b>ADDRESS</b></td>
+<td><textarea name="Address" rows="4" cols="30"></textarea>
+</td>
+</tr>
+
+<tr>
+<td><b>GENDER</b></td>
+<td><input type="radio" name="r">MALE</input>
+<input type="radio" name="r">FEMALE</input>
+</td>
+</tr>
+
+<tr>
+<td><b>STATE</b></td>
+<td><input type="text" name="State" maxlength="30" />
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+
+<tr>
+<td><b>COUNTRY</b></td>
+<td><input type="text" name="Country" maxlength="30"/></td>
+</tr>
+
+<tr>
+<td><b>MARKS DETAILS</b></td>
+<td><table border=2>
+<th>CLASS</th>
+<th>BOARD</th>
+<th>MARKS(%)</th>
+<th>YEAR OF PASSING</th>
+
+<tr>
+<td>12th</td>
+<td><select name="boardtwelve">
+<option value="-1">BOARD</option>
+<option>HSC</option>
+<option>CBSE</option>
+<option>ICSE</option>
+</select>
+</td>
+
+<td><input type="text" name="twmks"></input></td>
+<td><input type="text" name="twyr" maxlength=4></input></td>
+</tr>
+
+<tr>
+<td>10th</td>
+<td><select name="boardten">
+<option value="-1">BOARD</option>
+<option>SSC</option>
+<option>CBSE</option>
+<option>ICSE</option>
+</select>
+</td>
+
+<td><input type="text" name="tnmks" maxlength=6></input></td>
+<td><input type="text" name="tnyr" maxlength=4></input></td>
+</tr>
+
+</table>
+</td>
+</tr>
+
+<tr>
+<td><b>BRANCH</b></td>
+<td><select name="br">
+<option value="-1">BRANCH</option>
+<option>COMPUTER ENGG</option>
+<option>MECHANICAL ENGG</option>
+<option>ELECTRONICS & TELECOMMUNICATION ENGG</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><b>YEAR OF ADMISSION</b></td>
+<td><input type="text" name="yoa" maxlength=4></input>
+</td>
+</tr><br><br>
+
+<tr>
+<td colspan="2" align="center">
+<style>
+	body{
+		background-image: url("_DSC3037.jpg");
+		background-size: cover;
+		height: 130vh;
+		background-position:center;
+	}
+.button{
+padding: 15px 25px;
+font-size: 24px;
+cursor:pointer;
+background-color:yellow;
+}
+.button:hover { background-color:red}
+</style>
+<button class="button">Submit</button>
+
+<style>
+.button{
+padding: 15px 25px;
+font-size: 24px;
+cursor:pointer;
+background-color:yellow;
+}
+.button:hover { background-color:red}
+</style>
+<button class="button">Reset</button>
+
+</td>
+</tr>
+</table>
+</form>
+
+<script type="text/javascript">
+function validate()
+{
+	var fn=document.stud.firstname;
+	var mn=document.stud.fathername;
+	var ln=document.stud.lastname;
+
+	var d=document.stud.date;
+	var m=document.stud.month;
+	var y=document.stud.year;
+	var mbn=document.stud.mobn;
+
+	var add=document.stud.Address;
+	var st=document.stud.State;
+	var co=document.stud.Country;
+	var ya=document.stud.yoa;
+
+if((fn.value==null)||(fn.value==""))
+	{
+	alert("ENTER FIRST NAME!");
+	fn.focus();
+	fn.select();
+	return false;
+	}
+if((mn.value==null)||(mn.value==""))
+	{
+	alert("ENTER FATHER'S NAME!");
+	fn.focus();
+	fn.select();
+	return false;
+	}
+if((ln.value==null)||(ln.value==""))
+	{
+	alert("ENTER LAST NAME!");
+	fn.focus();
+	fn.select();
+	return false;
+	}
+if(d.selectedIndex==0)
+	{
+	alert("SELECT DATE");
+	d.focus();
+	return false;
+	}
+if(m.selectedIndex==0)
+	{
+	alert("SELECT MONTH");
+	m.focus();
+	return false;
+	}
+if(y.selectedIndex==0)
+	{
+	alert("SELECT YEAR");
+	y.focus();
+	return false;
+	}
+var ed=document.stud.ei;
+var e=document.stud.ei.value;
+var atp=e.indexOf("@");
+var dotp=e.indexOf(".");
+if(atp < 1 || dotp < atp+2 || dotp+2>=e.length)
+	{
+	alert("PLEASE ENTER VALID EMAIL ID!");
+	ed.focus();
+	return false;
+	}
+if(!document.stud.r[0].checked && !document.stud.r[1].checked)
+	{
+	alert("SPECIFY GENDER!");
+	document.stud.r[0].focus();
+	return false;
+	}
+
+if(add.value=="" )
+	{
+	alert("ENTER YOUR ADDRESS!");
+	add.focus();
+	return false;
+	}
+if(st.value=="" )
+	{
+	alert("ENTER YOUR STATE!");
+	add.focus();
+	return false;
+	}
+if(co.value=="" )
+	{
+	alert("ENTER YOUR COUNTRY!");
+	add.focus();
+	return false;
+	}
+var b12=document.stud.boardtwelve;
+if(b12.selectedIndex==0)
+	{
+	alert("SELECT BOARD");
+	b12.focus();
+	return false;
+	}
+
+var b10=document.stud.boardten;
+if(b10.selectedIndex==0)
+	{
+	alert("SELECT BOARD");
+	b10.focus();
+	return false;
+	}
+
+var brn=document.stud.br;
+if(brn.selectedIndex==0)
+	{
+	alert("SELECT BRANCH!");
+	brn.focus();
+	return false;
+	}
+if(ya.value=="")
+	{
+	alert("SELECT YEAR");
+	ya.focus();
+	return false;
+	}
+
+return true;
+}
+</script>
+</body>
+</html>
